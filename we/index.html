@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Session Flex + Position</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .card {
+        width: 300px;
+        border: 1px solid rgb(224, 224, 224);
+    }
+
+    .card-img {
+        width: 100%;
+    }
+
+    .footer {
+        border-top: 1px solid black;
+    }
+
+    h3,
+    p {
+        margin: 5px 0px;
+    }
+
+    .box-img {
+        width: 100%;
+    }
+
+    img+div {
+        display: flex;
+    }
+
+    
+
+    .price {
+        display: flex;
+    }
+
+    .price>p {
+        margin-right: 10px;
+    }
+
+    .bot {
+        margin-left: 10px;
+    }
+
+    .container {
+        border: 2px solid red;
+
+    }
+
+    #main {
+        border: 1px solid green;
+        margin: 20px;
+    }
+    .card{
+        border: 1px solid rebeccapurple;
+    }
+    .container{
+        display: flex;
+
+    }
+    .box-img{
+        position: relative;
+        
+    }
+    .pos{
+        position: absolute;
+        bottom: 10px;
+        /* overflow: hidden; */
+    }
+    .posi{
+        position: absolute;
+        bottom: 10px;
+        left: 90px;
+        /* overflow: hidden; */
+    }
+    img+div>p {
+        margin-left: 10px;
+        font-weight: bold;
+        padding: 5px;
+        background-color: aqua;
+    }
+</style>
+<style>
+
+</style>
+
+<body>
+    <div class="container">
+        <div id="main">
+            <div class="card">
+                <div class="box-img">
+                    <img src="https://raw.githubusercontent.com/Sourav12061999/nykaafashion/main/nykaa-clone/Kids%20Page/Images/img1.jpg"
+                        alt="" class="card-img">
+                    <div>
+                        <p class="pos">Bestseller</p>
+                        <p class="posi">Offer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bot">
+                <h3 class="card-heading">Kids Garments</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet. </p>
+                <div class="price">
+                    <p>$1,800</p>
+                    <p>$3,000</p>
+                    <p>40% Off</p>
+                </div>
+                <p>1-2 Years, 2-3 Years, 3-4 Years,5-...</p>
+            </div>
+        </div>
+        <div id="main">
+            <div class="card">
+                <div class="box-img">
+                    <img src="https://raw.githubusercontent.com/Sourav12061999/nykaafashion/main/nykaa-clone/Kids%20Page/Images/img1.jpg"
+                        alt="" class="card-img">
+                    <div>
+                        <p class="pos">Bestseller</p>
+                        <p class="posi">Offer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bot">
+                <h3 class="card-heading">Kids Garments</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet. </p>
+                <div class="price">
+                    <p>$1,800</p>
+                    <p>$3,000</p>
+                    <p>40% Off</p>
+                </div>
+                <p>1-2 Years, 2-3 Years, 3-4 Years,5-...</p>
+            </div>
+        </div>
+        <div id="main">
+            <div class="card">
+                <div class="box-img">
+                    <img src="https://raw.githubusercontent.com/Sourav12061999/nykaafashion/main/nykaa-clone/Kids%20Page/Images/img1.jpg"
+                        alt="" class="card-img">
+                    <div>
+                        <p class="pos">Bestseller</p>
+                        <p class="posi">Offer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bot">
+                <h3 class="card-heading">Kids Garments</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet. </p>
+                <div class="price">
+                    <p>$1,800</p>
+                    <p>$3,000</p>
+                    <p>40% Off</p>
+                </div>
+                <p>1-2 Years, 2-3 Years, 3-4 Years,5-...</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

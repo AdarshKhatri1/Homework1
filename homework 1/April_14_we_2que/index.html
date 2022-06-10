@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        h1{
+            width: 400px;
+            margin: auto;
+            text-align: center;
+            margin-top: 30px;
+        }
+       body>p{
+            width: 500px;
+            margin: auto;
+            text-align: center;
+            margin-top: 20px;
+        }
+        #mai{
+            
+            height: 350px;
+            margin: auto;
+            margin-top: 40px;
+            width: 60%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(1,1fr);
+            gap: 20px;
+        }
+        @media all and (min-width:450px) and (max-width:750px) {
+            #mai{
+                width: 90%;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(2,1fr);
+            }
+            h1{
+            width: 95%;
+            
+        }
+       body>p{
+            width: 90%;
+            
+        }
+
+        }
+        @media all and (min-width:150px) and (max-width:450px) {
+            #mai{
+                width: 99%;
+                
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: repeat(3,1fr);
+            }
+            h1{
+            width: 95%;
+            
+        }
+       body>p{
+            width: 90%;
+            
+        }
+        }
+        #mai>div{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            height: auto;
+        }
+        h3{
+            text-align: center;
+            font-size: 25px;
+        }
+        h2{
+            text-align: center;
+            margin-bottom: -15px;
+            font-size: 30px;
+        }
+        #mai>div:nth-child(1)>h2{       
+            color: rgb(12, 230, 12);
+        }
+        #mai>div:nth-child(2)>h2{
+            color: orange;
+        }
+        #mai>div:nth-child(3)>h2{
+            color: blue;
+        }
+        h2+p{
+            text-align: center;
+            font-size: 14px;
+            font-style: italic;
+        }
+        p+p{
+            text-align: center;
+            width: 80%;
+            margin: auto;
+            margin-top: 40px;
+        }
+        #gh{
+           width: 50%;
+           margin: auto;
+           margin-top: 30px;
+        }
+        div>button{
+            width: 100%;
+            height: 50px;
+            font-weight: bold;
+            border: 1px solid blue;
+            border-radius: 5px;
+            background-color: white;
+            color: blue;  
+            margin-bottom: 10px;          
+        }
+        button:hover{
+            color: white;
+            background-color: blue;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <h1>Choose a plan that right for your business</h1>
+    <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website are really like!</p>
+    <div id="mai">
+        <div>
+            <h3>Starter Plan</h3>
+            <h2>Free</h2>
+            <p>Per month</p>
+            <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+            <div id="gh">
+                <button>Start Now</button>
+            </div>
+        </div>
+        <div>
+            <h3>Business Plan</h3>
+            <h2>$39.00</h2>
+            <p>Per month</p>
+            <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+            <div id="gh">
+                <button>Start Now</button>
+            </div>
+        </div>
+        <div>
+            <h3>Premium Plan</h3>
+            <h2>$59.00</h2>
+            <p>Per month</p>
+            <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+            <div id="gh">
+                <button>Start Now</button>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

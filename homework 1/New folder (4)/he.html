@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        p+h6 {
+            margin-top: -12px;
+        }
+
+        #para1 {
+            color: gray;
+        }
+
+        #blogs-container {
+            display: grid;
+            padding: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            border: 5px solid black;
+            gap: 10px;
+        }
+
+        #blogs-container>div {
+            border: 1px solid green;
+        }
+
+        #blogs-container>div>img {
+            width: 100%;
+        }
+
+        #catagory-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            border: 5px solid green;
+            /* height: 500px; */
+            margin-top: 30px;
+        }
+
+        #catagory-container>div{
+            border: 1px solid red
+        }
+
+        /* Medium screens */
+        @media all and (min-width:451px) and (max-width:750px) {}
+
+        /* Small Screens */
+        @media all and (min-width:100px) and (max-width:450px) {}
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Our Blog Posts</h1>
+    </div>
+    <div id="blogs-container">
+        <!-- All the Blogs will be here  -->
+        <div>
+            <!-- the images, date and the blog heading will be here  -->
+            <!-- <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/varun_bhatt_60be6038a5.jpeg" -->
+                alt="agra" />
+            <p id="para1">29,january 2019</p>
+            <h6>Architectoral Art Modern</h6>
+        </div>
+        <div>
+            <!-- the images, date and the blog heading will be here  -->
+            <!-- <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Yogesh_52e31f5560.jpg" alt="agra" /> -->
+            <p id="para1">29,january 2019</p>
+            <h6>Architectoral Art Modern</h6>
+        </div>
+        <div>
+            <!-- the images, date and the blog heading will be here  -->
+            <!-- <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Nrupul_d3fe3b289a.jpg" alt="agra" /> -->
+            <p id="para1">29,january 2019</p>
+            <h6>Architectoral Art Modern</h6>
+        </div>
+    </div>
+    <div id="catagory-container">
+        <div id="">
+            <!-- The image, h3 tag, p tag etc will be here  -->
+            <!-- <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/2020/PC/Electronic._SY232_CB431401553_.jpg" -->
+                alt="">
+            <h3>Creative Design</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatibus hic. Placeat, quam!</p>
+        </div>
+        <div>
+            <!-- The image, h3 tag, p tag etc will be here  -->
+            <!-- <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/2020/PC/Electronic._SY232_CB431401553_.jpg" -->
+                alt="">
+            <h3>Creative Design</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatibus hic. Placeat, quam!</p>
+        </div>
+        <div>
+            <!-- The image, h3 tag, p tag etc will be here  -->
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/2020/PC/Electronic._SY232_CB431401553_.jpg"
+                alt="">
+            <h3>Creative Design</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatibus hic. Placeat, quam!</p>
+        </div>
+        <div>
+            <!-- The image, h3 tag, p tag etc will be here  -->
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/2020/PC/Electronic._SY232_CB431401553_.jpg"
+                alt="">
+            <h3>Creative Design</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatibus hic. Placeat, quam!</p>
+        </div>
+        <div>
+            <!-- The image, h3 tag, p tag etc will be here  -->
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/2020/PC/Electronic._SY232_CB431401553_.jpg"
+                alt="">
+            <h3>Creative Design</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatibus hic. Placeat, quam!</p>
+        </div>
+        <div>
+            <!-- The image, h3 tag, p tag etc will be here  -->
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/2020/PC/Electronic._SY232_CB431401553_.jpg"
+                alt="">
+            <h3>Creative Design</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatibus hic. Placeat, quam!</p>
+        </div>
+        <div>
+            <!-- The image, h3 tag, p tag etc will be here  -->
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/2020/PC/Electronic._SY232_CB431401553_.jpg"
+                alt="">
+            <h3>Creative Design</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatibus hic. Placeat, quam!</p>
+        </div>
+        <div>
+            <!-- The image, h3 tag, p tag etc will be here  -->
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/2020/PC/Electronic._SY232_CB431401553_.jpg"
+                alt="">
+            <h3>Creative Design</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatibus hic. Placeat, quam!</p>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

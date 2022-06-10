@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        #cont {
+            border: 1px solid red;
+            width: 98%;
+            height: auto;
+            margin: auto;
+            padding: 10px;
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 2fr 2fr 1fr;
+            grid-template-rows: 80px 155px 155px 155px;
+            gap: 30px;
+            grid-template-areas:
+                "y y y"
+                "r r g1"
+                "r r g2"
+                "r r g3"
+            ;
+        }
+
+       
+
+        #cont>div {
+            padding-left: 10px;
+            padding-top: 5px;
+        }
+        @media all and (min-width:450px) and (max-width:750px) {
+            #cont{
+                /* background-color: goldenrod; */
+                /* display: grid; */
+                width: 96%;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 80px 155px 155px 155px;
+
+                grid-template-areas:
+                    "y y y"
+                    "r r r"
+                    "r r r"
+                    "g1 g2 g3"
+                ;
+            }
+        }
+        @media all and (min-width:150px) and (max-width:449px) {
+            #cont{
+                /* background-color: goldenrod; */
+                /* display: grid; */
+                width: 92%;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: 80px 200px 130px 130px 130px;
+
+                grid-template-areas:
+                    "y y y"
+                    "r r r"
+                    "g1 g1 g1"
+                    "g2 g2 g2"
+                    "g3 g3 g3"
+                ;
+            }
+        }
+
+        #cont>div:nth-child(1) {
+            background-color: yellow;
+            grid-area: y;
+            line-height: 35px;
+            font-weight: bold;
+            font-size: 35px;
+        }
+
+        #cont>div:nth-child(2) {
+            background-color: red;
+            grid-area: r;
+        }
+
+        #cont>div:nth-child(3) {
+            background-color: green;
+            grid-area: g1;
+        }
+
+        #cont>div:nth-child(4) {
+            background-color: green;
+            grid-area: g2;
+        }
+
+        #cont>div:nth-child(5) {
+            background-color: green;
+            grid-area: g3;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div id="cont">
+        <div>Navigation</div>
+        <div>LEFT BOX</div>
+        <div>RIGHT BOX 1</div>
+        <div>RIGHT BOX 2</div>
+        <div>RIGHT BOX 3</div>
+    </div>
+</body>
+
+</html>

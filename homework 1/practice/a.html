@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        h1{
+            font-size: 50px;
+            text-align: center;
+        }
+            #cont{
+                border: 1px solid red;
+                /* width: 50%; */
+                height: 500px;
+                /* margin: auto; */
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(2,48%);
+                gap: 20px;
+                padding: 20px;
+                /* display: flex; */
+                flex-wrap: wrap;
+                /* gap: 20px 20px; */
+                /* padding: 10px; */
+                /* gap: 20px; */
+                /* gap: 100px 50px;                 */
+            }
+            #cont>div{
+                border: 1px solid green;
+                /* width: 50%; */
+                /* height: 500px; */
+                /* margin: auto; */
+                /* display: grid; */
+                /* grid-template-columns: 50px 50px 50px;
+                grid-template-rows: 100px 100px; */
+            }
+          /* .ii{
+              border: 1px solid green;
+          } */
+    </style>
+</head>
+<body>
+    <h1>Masai Calculator</h1>
+    <div id="cont">
+        <div class="i"></div>
+        <div class="i"></div>
+        <div class="i"></div>
+        <div class="i"></div>
+        <div class="i"></div>
+        <div class="i"></div>
+    </div>
+</body>
+</html>

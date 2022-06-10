@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    /* Medium screens */
+    #blog {
+      display: flex;
+      border: 5px solid red;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(1,200px);
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      /* wi; */
+
+    }
+    #blog>div{
+      border: 5px solid green;
+      display: flex;
+     
+    }
+
+    #blog>img {
+      width: 700px;
+      margin: 34px;
+    }
+
+
+    @media all and (min-width:451px) and (max-width:750px) {}
+
+
+    /* Small Screens */
+    @media all and (min-width:100px) and (max-width:450px) {}
+  </style>
+</head>
+
+<body>
+  <div id="header">
+    <h1>Our Blog Posts</h1>
+  </div>
+  <div id="blog">
+    <div>
+      <!-- <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Nrupul_d3fe3b289a.jpg" alt="f"> -->
+      <p>29, January 2019</p>
+      <h3>Architectural Art Modern</h3>
+    </div>
+    <div>
+      <!-- <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Nrupul_d3fe3b289a.jpg" alt="f"> -->
+      <p>29, January 2019</p>
+      <h3>Architectural Art Modern</h3>
+    </div>
+    <div>
+      <!-- <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Nrupul_d3fe3b289a.jpg" alt="f"> -->
+      <p>29, January 2019</p>
+      <h3>Architectural Art Modern</h3>
+    </div>
+  </div>
+  <div id="catagory-container">
+    <!-- All the boxes for blog catagory goes here  -->
+    <div>
+      <!-- The image, h3 tag, p tag etc will be here  -->
+    </div>
+    <div>
+      <!-- The image, h3 tag, p tag etc will be here  -->
+    </div>
+    <div>
+      <!-- The image, h3 tag, p tag etc will be here  -->
+    </div>
+    <div>
+      <!-- The image, h3 tag, p tag etc will be here  -->
+    </div>
+    <div>
+      <!-- The image, h3 tag, p tag etc will be here  -->
+    </div>
+    <div>
+      <!-- The image, h3 tag, p tag etc will be here  -->
+    </div>
+    <div>
+      <!-- The image, h3 tag, p tag etc will be here  -->
+    </div>
+    <div>
+      <!-- The image, h3 tag, p tag etc will be here  -->
+    </div>
+  </div>
+</body>
+
+</html>

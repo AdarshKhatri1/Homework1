@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #nav{
+            width: 99.20%;
+            height: 40px;
+            /* margin: auto; */
+            padding-left: 10px;
+            line-height: 40px;
+            font-weight: bold;
+            font-size: 30px;
+            /* padding-left:  */
+            background-color: yellow;
+            margin-bottom: 20px;
+        }
+        #cont{
+            height: 500px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(1,300px);
+            gap: 10px;
+        }
+        #cont>div{
+            padding-top: 10px;
+        }
+        @media all and (min-width:450px) and (max-width:870px){
+            #cont{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(2,1fr);
+                gap: 30px;
+            }
+            #nav{
+                width: 98.20%;
+            }
+                
+        }
+        @media all and (min-width:150px) and (max-width:449px) {
+            #cont{
+           
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: repeat(4,1fr);
+            }
+            #nav{
+                width: 97.30%;
+            }
+        }
+
+        #cont>div:nth-child(1){
+            background-color: red;
+        }
+        #cont>div:nth-child(2){
+            background-color: green;
+        }
+        #cont>div:nth-child(3){
+            background-color: blue;
+        }
+        #cont>div:nth-child(4){
+            background-color: gray;
+        }
+        #cont>div{
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">Navigation</div>
+    <div id="cont">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+        <div>Box 4</div>
+    </div>
+
+</body>
+</html>

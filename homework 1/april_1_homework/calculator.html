@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <style>
+        h1{
+            width: 18%;
+           margin: auto; 
+           margin-top: 2%;
+           color: rgb(23, 147, 147);
+           font-size: 35px;
+         }
+        #dow{
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+            /* border: 1px solid red; */
+            width: 17%;
+            height:300px;
+            margin: auto;
+            margin-top:2%;
+            padding: 30px;
+            
+        }
+        #dow>div{
+            
+            /* border: 1px solid red; */
+            height: 15%;
+            margin: 10px;
+           /* padding: 10%; */
+        }
+        div div div{
+            /* border: 2px solid black; */
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+            height: 100%;
+            width: 20%;
+            margin: auto;
+            border-radius: 5px;
+        }
+        div div{
+            
+            display: flex;
+            
+        }
+        
+        div span{
+            line-height: 42px;
+            padding-left: 35%;
+            font-weight: bold;
+            font-size: 25px;
+            color: yellowgreen;
+        }
+       div div div:hover{
+            color: black;
+            background-color: khaki;
+            cursor: pointer;
+            /* border: 2px solid red; */
+        }
+        .black{
+            background-color: black;
+            color: white;
+        }
+        .red{
+           
+            background-color: red;
+        }
+        .one{
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+            /* height: 25px; */
+            width: 95%;
+            /* border: 10px solid gold; */
+        }
+        .red:first-child(1){
+            color: white;
+        }
+    </style>
+</head>
+<body>
+        <h1>Masai Calculator</h1>   
+        <div id="dow">
+            <div>
+                <div class="one"> </div>              
+            </div>
+            <div>
+                <div ><span>1</span></div>
+                <div><span>2</span></div>
+                <div><span>3</span></div>
+                <div class="black"><span>4</span></div>      
+            </div>
+            <div>
+                <div><span>4</span></div>
+                <div><span>5</span></div>
+                <div><span>6</span></div>
+                <div class="black"><span>-</span></div>      
+            </div>
+            <div>
+                <div><span>7</span></div>
+                <div><span>8</span></div>
+                <div><span>9</span></div>
+                <div class="black"><span>*</span></div>      
+            </div>
+            <div id="it">
+                <div class="red"><span>c</span></div>
+                <div><span>0</span></div>
+                <div class="black"><span>=</span></div>
+                <div class="black"><span>/</span></div>      
+            </div>
+            
+            
+        </div> 
+</body>
+</html>

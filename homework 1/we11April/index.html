@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #heading{
+            width: 30%;
+            height:200px;
+            margin: auto;
+            text-align: center;
+        }
+        #heading>p{
+            color:gray;
+            font-size: 17px;
+            margin-top: -20px;
+            margin-left: -12%;
+            width: 120%;
+            
+        }
+        #heading>h1{
+            font-size: 38px;
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+        #down{
+            width: 60%;
+            height: 450px;
+            margin: auto;
+            display: flex;
+            margin-top: -3%;
+           
+        }
+        #down div{
+            height: auto;
+            width: 30%;
+            margin: 2%;
+           text-align: center;
+           padding: 3%;
+           margin-top: 5%;
+           margin-bottom: 5%;
+           box-shadow: rgba(48, 48, 48, 0.2) 0px 7px 29px 0px;
+        }
+       
+        div>div h1{
+            
+            font-weight: bold;
+        }
+        div>div h1+p{
+            margin-top: -8%;
+            font-style: italic;
+        }
+        div>div p+p{
+            margin-top: 14%;
+        }
+        button{
+            width: 70%;
+            height:15%;
+            border-radius: 8px;
+            border: 1px solid blue;
+            color: blue;
+            background-color: white;
+            font-weight: bold;
+            margin-top: 6%;
+        }
+        #down>div:nth-child(1)>h1{
+            color: green;
+        }
+        #down>div:nth-child(2)>h1{
+            color: orange;
+        }
+        #down>div:nth-child(3)>h1{
+            color: rgb(54, 54, 246);
+        }
+        button:hover{
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="heading" >
+        <h1>Choose a plan that right for your business</h1>
+        <p>We collect reviews from our users so you can get an honest opinion of what an experience wirh our websites are really like!</p>         
+    </div>
+    <div id="down">
+        <div>
+            <h2>Starter Plan</h2>
+            <h1>Free</h1>
+            <p>per month</p>
+            <p>we collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+            <button>Start Now</button>
+        </div>
+        <div>
+            <h2>Business Plan</h2>
+            <h1>$39.00</h1>
+            <p>per month</p>
+            <p>we collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+            <button>Start Now</button>
+        </div>
+        <div>
+            <h2>Premium Plan</h2>
+            <h1>$59.00</h1>
+            <p>per month</p>
+            <p>we collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+            <button>Start Now</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web 18 Unit-2 C3</title>
+    <style>
+      #reports{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        
+        grid-template-columns: repeat(4,1fr);
+        gap:  10px;
+        margin-top: 20px;
+        
+      }
+      #reports>div{
+        border: 1px solid red;
+        padding-left: 10px;
+        padding-bottom: 15px;
+        /* width: 200px; */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <div>
+        <h1>Masai Evaluations Tracker</h1>
+        <form id="form">
+            <!-- When this form get submitted update the DOM According to the question -->
+          <input placeholder="Name" id="name" type="text"  />
+          <select id="batch">
+            <option value="WEB16">WEB16</option>
+            <option value="WEB17">WEB17</option>
+            <option value="WEB18">WEB18</option>
+          </select>
+          <select id="type">
+            <option value="DSA">DSA</option>
+            <option value="Coding">Coding</option>
+          </select>
+          <input placeholder="Student Code" id="stuent_code" type="text" />
+          <select id="unit">
+            <option value="Unit-1">Unit-1</option>
+            <option value="Unit-2">Unit-2</option>
+            <option value="Unit-3">Unit-3</option>
+            <option value="Unit-4">Unit-4</option>
+          </select>
+          <select id="sprint">
+            <option value="Sprint-1">Sprint-1</option>
+            <option value="Sprint-2">Sprint-2</option>
+            <option value="Sprint-3">Sprint-3</option>
+            <option value="Sprint-4">Sprint-4</option>
+          </select>
+          <input placeholder="Score(0-10)" id="score" type="number" />
+          <input type="submit" />
+        </form>
+      </div>
+      <div id="reports">
+        <!-- All the cards that get appended with Javascript on form submit goes here -->
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  
+  
+  document.querySelector("form").addEventListener("submit", show);
+
+  function show(){
+    event.preventDefault();
+    var name = document.querySelector("#name").value;
+    // console.log(name);
+    var batch = document.querySelector("#batch").value;
+    // console.log(batch);
+    var sub = document.querySelector("#type").value;
+    // console.log(sub);
+    var stc = document.querySelector("#stuent_code").value;
+    // console.log(stc);
+    var section = document.querySelector("#unit").value;
+    // console.log(section);
+    var sprint = document.querySelector("#sprint").value;
+    // console.log(sprint);
+    var score = +document.querySelector("#score").value;
+    // console.log(score);
+    // console.log(name,batch,sub,code,section,sprint,score)
+
+   var newdiv =  document.createElement("div");
+
+   var h1 = document.createElement("h1");
+   h1.innerText = name;
+   var p1 = document.createElement("p");
+   p1.innerText = batch;
+   var p2 = document.createElement("p");
+   p2.innerText = sub;
+   var p3 = document.createElement("p");
+   p3.innerText = stc;
+   var p4 = document.createElement("p");
+   p4.innerText = section;
+   var p5 = document.createElement("p");
+   p5.innerText = sprint;   
+   var p6 = document.createElement("p");
+   p6.innerText = score;
+   var mastery = document.createElement("h3");
+  if(score<3){
+    mastery.innerText="Learning"
+    mastery.style.color = "red";
+  }else if(score>3 && score<8){
+    mastery.innerText="Achieving"
+    mastery.style.color= "orange";
+  }
+  else if(score>7 && score<11){
+    mastery.innerText="Mastery"
+    mastery.style.color= "green";
+  }else{
+    mastery.innerText = "score should be less than 11!"
+  }
+  
+  var delt = document.createElement("button");
+  delt.innerText = "Delete";
+  delt.addEventListener("click", deleted);
+  newdiv.append(h1,p1,p2,p3,p5,p6,p4,mastery,delt);
+   document.querySelector("#reports").append(newdiv);
+
+  }
+  function deleted(){
+    event.preventDefault();
+    event.target.parentNode.remove();
+  }
+</script>

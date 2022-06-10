@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0px;
+      }
+        h1{
+          text-align: center;
+
+        }
+        #blogs-container{
+          display: grid;
+          /* width: 60%; */
+          margin: auto;
+          margin-top: 10px;
+          padding: 30px;
+          /* border: 1px solid red; */
+          grid-template-columns: repeat(3,1fr);
+          grid-template-rows: repeat(1,100%);
+          gap: 40px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        }
+
+        #blogs-container>div{
+          /* border: 1px solid green; */
+         
+        }
+        #blogs-container>div>img{
+          height: 400px;
+          width: 100%;
+        }
+        #blogs-container>div>img+p{
+          color: gray;
+          line-height: 20px;
+        }
+        #blogs-container>div>img+p+p{
+          font-weight: bold;
+          line-height: 20px;
+        }
+
+        #catagory-container{               
+          width: 90%;
+          padding: 20px;
+          margin: auto;
+          /* border: 2px solid rebeccapurple; */
+          margin-top: 20px;
+          /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    */
+                 display: grid;
+          grid-template-columns: repeat(4,1fr);
+          grid-template-rows: repeat(2,300px);
+          gap: 40px;
+        }
+        #catagory-container>div{
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;          
+          display: flex;
+          flex-direction: column;
+          padding: 10px;
+          /* width: 200px; */
+          padding-top: 50px;
+          text-align: center;
+          align-items:center;          
+        }
+        #catagory-container>div>img+h3{
+          margin: 10px;
+        }
+        h3+p{
+          width: 80%;
+          color: gray;
+        }
+        /* Medium screens */
+        @media all and (min-width:451px) and (max-width:750px){
+          #blogs-container{
+          display: grid;
+          /* width: 60%; */
+          margin: auto;
+          margin-top: 10px;
+          /* margin: 0px; */
+          padding: 30px;
+          /* border: 1px solid red; */
+          grid-template-columns: repeat(2,1fr);
+          grid-template-rows: repeat(2,1fr);
+          gap: 40px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        }
+        #catagory-container{               
+          width: 90%;
+          padding: 20px;
+          /* border: 10px solid red; */
+          margin: auto;
+          margin-top: 20px;
+          /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    */
+                 display: grid;
+          grid-template-columns: repeat(3,1fr);
+          grid-template-rows: repeat(3,300px);
+          gap: 40px;
+        }
+        }
+
+
+        /* Small Screens */
+        @media all and (min-width:100px) and (max-width:450px){
+          #blogs-container{
+          display: grid;
+          /* width: 60%; */
+          margin: auto;
+          margin-top: 10px;
+          /* margin: 0px; */
+          padding: 30px;
+          /* border: 1px solid red; */
+          grid-template-columns: repeat(1,100%);
+          grid-template-rows: repeat(3,1fr);
+          gap: 40px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        }
+        #catagory-container{               
+          width: 90%;
+          padding: 20px;
+          margin: auto;
+          margin-top: 20px;
+          /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    */
+                 display: grid;
+          grid-template-columns: repeat(2,1fr);
+          grid-template-rows: repeat(4,300px);
+          gap: 40px;
+        }
+        }
+    </style>
+  </head>
+
+  <body>
+    <div id="header">
+      <h1>Our Blog Posts</h1>
+    </div>
+    <div id="blogs-container">
+      <!-- All the Blogs will be here  -->
+      <div>
+        <!-- the images, date and the blog heading will be here  -->
+        <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Nrupul_d3fe3b289a.jpg" alt="nurpul">
+        <p>29,January 2019</p>
+        <p>Architectural Art Modern</p>
+      </div>
+      <div>
+        <!-- the images, date and the blog heading will be here  -->
+        <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Yogesh_52e31f5560.jpg" alt="Yogesh_52e31f5560">
+        <p>29,January 2019</p>
+        <p>Architectural Art Modern</p>
+      </div>
+      <div>
+        <!-- the images, date and the blog heading will be here  -->
+        <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Arjun_3848ab5fe7.jpg" alt="Arjun_3848ab5fe7">
+        <p>29,January 2019</p>
+        <p>Architectural Art Modern</p>
+      </div>
+    </div>
+    <div id="catagory-container">
+      <!-- All the boxes for blog catagory goes here  -->
+      <div>
+        <!-- The image, h3 tag, p tag etc will be here  -->      
+          <img src="https://www.masaischool.com/img/courses/android.svg" alt="full">      
+       <h3>Creative Design</h3>
+       <p>For far away, behind the word mountains, far from the countries Vokalia.</p>
+      </div>
+      <div>
+        <!-- The image, h3 tag, p tag etc will be here  -->
+       
+          <img src="https://www.masaischool.com/img/courses/android.svg" alt="full">
+          <h3>Creative Design</h3>
+       <p>For far away, behind the word mountains, far from the countries Vokalia.</p>
+   
+      </div>
+      <div>
+        <!-- The image, h3 tag, p tag etc will be here  -->
+        <img src="https://www.masaischool.com/img/courses/android.svg" alt="lsdjf">
+        <h3>Creative Design</h3>
+       <p>For far away, behind the word mountains, far from the countries Vokalia.</p>
+      </div>
+      <div>
+        <!-- The image, h3img tag, p tag etc will be here  -->
+        <img src="https://www.masaischool.com/img/courses/data.svg" alt="ld">
+        <h3>Creative Design</h3>
+       <p>For far away, behind the word mountains, far from the countries Vokalia.</p>
+      </div>
+      <div>
+        <!-- The image, h3 tag, p tag etc will be here  -->
+        <img src="https://www.masaischool.com/img/courses/data.svg" alt="ldjf">
+        <h3>Creative Design</h3>
+       <p>For far away, behind the word mountains, far from the countries Vokalia.</p>
+      </div>
+      <div>
+        <!-- The image, h3 tag, p tag etc will be here  -->
+        <img src="https://www.masaischool.com/img/courses/data.svg" alt="sdf">
+        <h3>Creative Design</h3>
+       <p>For far away, behind the word mountains, far from the countries Vokalia.</p>
+      </div>
+      <div>
+        <!-- The image, h3 tag, p tag etc will be here  -->
+        <img src="https://www.masaischool.com/img/courses/data.svg" alt="sdf">
+        <h3>Creative Design</h3>
+       <p>For far away, behind the word mountains, far from the countries Vokalia.</p>
+      </div>
+      <div>
+        <!-- The image, h3 tag, p tag etc will be here  -->
+        <img src="https://www.masaischool.com/img/courses/data.svg" alt="sdf">
+        <h3>Creative Design</h3>
+       <p>For far away, behind the word mountains, far from the countries Vokalia.</p>
+      </div>
+      
+    </div>
+  </body>
+</html>
